@@ -1,0 +1,109 @@
+body {
+  background-color: hsl(216, 12%, 8%);
+}
+.card {
+  width: 300px;
+  height: 350px;
+  background-color: hsl(213, 19%, 18%);
+  margin: auto;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px;
+  transform: translateY(50%);
+}
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-family: Overpass-Bold;
+  margin-bottom: 0;
+  font-size: 25px;
+  margin-top: 30px;
+}
+p {
+  font-family: Overpass-Regular;
+  color: hsl(217, 12%, 63%);
+  font-size: 14px;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+.star_container > img {
+  width: 14px;
+  height: 14px;
+  padding: 10px;
+}
+
+.star_container {
+  margin-top: 30px;
+  width: 35px;
+  height: 35px;
+  background-color: rgb(65 70 76);
+  border-radius: 50%;
+}
+.numbers {
+  display: flex;
+}
+.numbers > button {
+  width: 35px;
+  height: 35px;
+  background-color: rgb(65 70 76);
+  border-radius: 50%;
+  margin-right: 15px;
+  color: hsl(217, 12%, 63%);
+  border: none;
+}
+.numbers > button:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+.numbers > button:active {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+.numbers > button > span {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: inherit;
+}
+.submit {
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  height: 35px;
+  margin-top: 30px;
+  border-radius: 20px;
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.submit:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.thankYou {
+  display: none;
+}
+.thankYou > img {
+  width: 120px;
+  height: 100px;
+  align-self: center;
+  margin-top: 35px;
+}
+.thankYou > p {
+  text-align: center;
+}
+.selection {
+  background-color: rgb(65 70 76);
+  color: hsl(25, 97%, 53%);
+  align-self: center;
+  margin-top: 30px;
+  font-family: Overpass-Regular;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 1440px) {
+  .card {
+    transform: translateY(25%);
+  }
+}
